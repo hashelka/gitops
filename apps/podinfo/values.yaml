@@ -24,4 +24,4 @@ spec:
       selfHeal: true
       prune: true
     syncOptions:
-      - CreateNamespace=true   # ← создаст namespace apps сам!
+      - CreateNamespace=true

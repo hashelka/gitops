@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root-apps
+  name: root-platform
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/hashelka/gitops
     targetRevision: main
-    path: apps
+    path: platform
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
