@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/ТЫ/gitops
+    repoURL: https://github.com/hashelka/gitops
     targetRevision: main
     path: apps
   destination:
@@ -25,7 +25,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/ТЫ/gitops
+    repoURL: https://github.com/hashelka/gitops
     targetRevision: main
     path: platform
   destination:
