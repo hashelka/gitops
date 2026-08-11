@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://stefanprodan.github.io/podinfo
+    repoURL: git@github.com:stefanprodan/podinfo.git
     chart: podinfo
     targetRevision: "6.7.0"
     helm:
