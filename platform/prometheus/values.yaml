@@ -1,0 +1,29 @@
+# Grafana
+grafana:
+  enabled: true
+  adminPassword: "CHANGEIT" #TODO: AWS Secret manager?
+  service:
+    type: ClusterIP
+
+# Prometheus
+prometheus:
+  prometheusSpec:
+    retention: 24h
+    resources:
+      requests:
+        cpu: 200m
+        memory: 400Mi
+
+alertmanager:
+  alertmanagerSpec:
+    resources:
+      requests:
+        cpu: 50m
+        memory: 50Mi
+
+
+nodeExporter:
+  enabled: true
+
+kubeStateMetrics:
+  enabled: true
